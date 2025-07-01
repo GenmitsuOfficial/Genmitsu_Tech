@@ -20,10 +20,11 @@ You can directly use the vlw file in the GUISliceJapaneseCharacters folder
 We use open source free font——M PLUS 1p, which you can download from https://fonts.google.com/specimen/M+PLUS+1p
 
 We choose the 8px version as following img shows for 3.5-4 inch LCD screen: 
-<img width="1151" alt="1751354905114" src="https://github.com/user-attachments/assets/03418612-4dd2-458c-ad0d-5b1304892cf0" />
+
+   <img width="1151" alt="1751354905114" src="https://github.com/user-attachments/assets/03418612-4dd2-458c-ad0d-5b1304892cf0" />
 
 Unpack/Unzip the zip downloaded and click to the unzip folder to choose font you wanna use:
-<img width="321" alt="965d7ecca8894adfccdeb98a561b25e" src="https://github.com/user-attachments/assets/58b6db03-f207-4f48-9a66-516fdcbb0ae6" />
+   <img width="321" alt="965d7ecca8894adfccdeb98a561b25e" src="https://github.com/user-attachments/assets/58b6db03-f207-4f48-9a66-516fdcbb0ae6" />
 
 In this case ,we use the MPLUS1p-Regular.ttf, right click the filename and select install.
 
