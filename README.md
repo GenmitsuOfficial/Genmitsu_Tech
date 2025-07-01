@@ -12,9 +12,9 @@
 
 # Display non ASCII Japanese on GUISlice
 
--OS here is Windows 9-11
--Microcontroller to use here is ESP32 wroom 32E
--You can directly use the vlw file in the GUISliceJapaneseCharacters folder and Upload to your MCU 
+  -OS here is Windows 9-11
+  -Microcontroller to use here is ESP32 wroom 32E
+  -You can directly use the vlw file in the GUISliceJapaneseCharacters folder and Upload to your MCU 
 
 ## Step one download TTF and Install Font on OS: 
 
