@@ -7,13 +7,13 @@
 - Build a cloud based remote wireless grbl controller for PC/Laptop
 - Fixing Serial Failed on WIN11
 
-- 
+  
 
 
 # Display non ASCII Japanese on GUISlice
 
-Microcontroller to use here is ESP32 wroom 32E 
-You can directly use the vlw file in the GUISliceJapaneseCharacters folder
+-Microcontroller to use here is ESP32 wroom 32E 
+-You can directly use the vlw file in the GUISliceJapaneseCharacters folder and Upload to your MCU 
 
 ## Step one download TTF and Install Font on OS: 
 
@@ -72,7 +72,8 @@ After doing this, click File->Open to confirm the path your vlw file is.
  -Add this code inside the SetUp():
  ``` if (!SPIFFS.begin(true)) { 
     return;
- ``` }
+      }
+ ``` 
  -Add E_MPLUS1P_REGULAR_12V or other Macro name for the Font in the enum for Fonts：
  ```enum {E_BUILTIN10X16,E_MPLUS1P_REGULAR_9V,MAX_FONT};
  ```
