@@ -70,9 +70,10 @@ After doing this, click File->Open to confirm the path your vlw file is.
 
 ## Step Five Coding and Upload Firmware 
  -Add this code inside the SetUp():
- ``` if (!SPIFFS.begin(true)) { 
-    return;
-      }
+ ```
+ ```   if (!SPIFFS.begin(true)) { 
+ ```   return;
+ ```     }
  ``` 
  -Add E_MPLUS1P_REGULAR_12V or other Macro name for the Font in the enum for Fonts：
  ```enum {E_BUILTIN10X16,E_MPLUS1P_REGULAR_9V,MAX_FONT};
