@@ -76,11 +76,12 @@ After doing this, click File->Open to confirm the path your vlw file is.
  ```     }
  ``` 
  -Add E_MPLUS1P_REGULAR_12V or other Macro name for the Font in the enum for Fonts：
- ```enum {E_BUILTIN10X16,E_MPLUS1P_REGULAR_9V,MAX_FONT};
+ ```
+    enum {E_BUILTIN10X16,E_MPLUS1P_REGULAR_9V,MAX_FONT};
  ```
  -Add this code to the InitGUIslice_gen function:
  ```    if (!gslc_FontSet(&m_gui,E_MPLUS1P_REGULAR_12V,GSLC_FONTREF_FNAME,"MPLUS1p-Light-12",12)) { return; }
-    gslc_FontSetMode(&m_gui, E_MPLUS1P_REGULAR_12V, GSLC_FONTREF_MODE_1);
+         gslc_FontSetMode(&m_gui, E_MPLUS1P_REGULAR_12V, GSLC_FONTREF_MODE_1);
  ```
 
 ## Compile and Upload firmware to ESP32 
