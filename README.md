@@ -100,6 +100,18 @@ After doing this, click File->Open to confirm the path your vlw file is.
 
 <br>
 
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
 
 
 # Build a cloud based remote wireless grbl controller for PC/Laptop
