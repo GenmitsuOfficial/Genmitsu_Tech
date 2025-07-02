@@ -185,6 +185,11 @@ For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/
 # Connect ESP32 Dev board/Genmitsu USB WiFi Module to PC/CNC Device 
 
 <img width="301" alt="7d48fb7dd7283aa93bc19ce6d2c33e4" src="https://github.com/user-attachments/assets/7f2ae942-c6ac-4c0f-baec-32ffd4745e70" />
+
+<br>
+
+<br>
+
 <img width="671" alt="832c555fc9b87344062a0402b29d19c" src="https://github.com/user-attachments/assets/e2a2af3f-f0c4-4edd-bf85-23fa7751c6b8" />
 
 
