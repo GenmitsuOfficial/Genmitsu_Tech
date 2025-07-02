@@ -96,6 +96,10 @@ After doing this, click File->Open to confirm the path your vlw file is.
 
 ![7fdc6608ad5accc0de7a50e18c39060](https://github.com/user-attachments/assets/842a14fd-b34a-4a50-b3e8-a24a09221ed8)
 
+<br>
+
+<br>
+
 
 
 # Build a cloud based remote wireless grbl controller for PC/Laptop
@@ -169,7 +173,7 @@ For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/
 # Connect ESP32 Dev board/Genmitsu USB WiFi Module to PC/CNC Device 
 
 <img width="301" alt="7d48fb7dd7283aa93bc19ce6d2c33e4" src="https://github.com/user-attachments/assets/7f2ae942-c6ac-4c0f-baec-32ffd4745e70" />
-![b7439f7a9ba0d827a41ed5e48e2d35fc](https://github.com/user-attachments/assets/64313494-479f-4200-bc1e-26c2f0ed3bd5)
+<img width="671" alt="832c555fc9b87344062a0402b29d19c" src="https://github.com/user-attachments/assets/e2a2af3f-f0c4-4edd-bf85-23fa7751c6b8" />
 
 
 # Turn on Candle/gSender and select the COM port that ESP32 Dev board is using 
