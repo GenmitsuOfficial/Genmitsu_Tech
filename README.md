@@ -1,4 +1,4 @@
-
+<img width="930" alt="b3dea30d009d8d2b401ed5ceab330b1" src="https://github.com/user-attachments/assets/eaa28d38-7f0d-41c0-a7c7-bcd4d6c323ea" />
 
 ​​Sharing Knowledge and Solutions for Common CNC Laser Machine and MCU Tech Issues​ and Scenes
 
@@ -8,6 +8,12 @@
 - Fixing Serial Failed on WIN11
 
   
+
+
+
+
+
+
 
 
 # Display non ASCII Japanese on GUISlice
@@ -89,3 +95,67 @@ After doing this, click File->Open to confirm the path your vlw file is.
 ## Compile and Upload firmware to ESP32 
 
 ![7fdc6608ad5accc0de7a50e18c39060](https://github.com/user-attachments/assets/842a14fd-b34a-4a50-b3e8-a24a09221ed8)
+
+
+
+# Build a cloud based remote wireless grbl controller for PC/Laptop
+
+## Prepare: One ESP32 Device, 
+## Create New Deployment on EMQX Cloud Platform
+- Click New Deployment
+<img width="1280" alt="048ecbf1a1f2de2ca1d2b9f4950a982" src="https://github.com/user-attachments/assets/3387c336-09b8-4206-a803-63e33caa6228" />
+- Choose Deployment Plan,here we recommand Serverless, choose the region 
+<img width="954" alt="65df600ea7f8c9901ec0b83f2a15af6" src="https://github.com/user-attachments/assets/484d1427-6f23-4097-8f2d-0656f80e6e84" />
+- Set Spend Limit and Project name and then click payment
+<img width="954" alt="bf4796be52a9767fe9fb7ab73ddd5b6" src="https://github.com/user-attachments/assets/9e35e9a7-92a9-422a-90a8-a3ef01ad33e5" />
+For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/pricing.html
+-Upon accepting the terms, the deployment will begin. The deployment's progress can be tracked on the Projects page.
+ Once the status updates to Running, your deployment is successfully established and is now operational.
+ After the deployment is created, it will appear on the EMQX Platform console home page. Click the Serverless deployment card to enter the deployment overview page.
+ On the overview page, you can check the real-time status and connection information for your deployment.
+
+
+## Add Authentication Information
+
+- Click "Access Control" to get to Client Authentication page.
+<img width="598" alt="657ecaf7ac1f116c29e9d49547e47dd" src="https://github.com/user-attachments/assets/be8233bd-d3dc-43bd-baab-6e0b11af1e3a" />
+-On the Client Authentication page, select + Add. Enter the username and password in the input fields and click the Confirm button to complete the addition of authentication information.
+ In this case , we should add two pairs of username and password :
+ --Username1:PCHost   password:20250630
+ --Username2:CNCDEVICE   password:20250701
+
+
+#  
+  
+# Edit demo code for ESP32 development board (For PC side) 
+
+- Download Wireless_GrblBridge_Host project to local
+- Open the Wireless_GrblBridge_Host.ino , which you can find in the project/folder "Wireless_GrblBridge_Host" 
+- Fullfill the mqtt broker address and port in code
+  <img width="617" alt="354d536f169b3c43fd0b05646844ca4" src="https://github.com/user-attachments/assets/203413a9-3c2f-4fbe-9b92-21e390a8b397" />  
+- Fullfill your wifi network SSID/NetworkName and password in code
+  <img width="327" alt="1751442128227" src="https://github.com/user-attachments/assets/bbbda270-a6e4-431b-a113-f1f1ecff5545" />
+- Fullfill one of the mqtt username and password you just set on the EMQX cloud platform "default projects"->your deployment->"Access Control" Page
+  Username1:PCHost   password:20250630
+  <img width="228" alt="1751443127640" src="https://github.com/user-attachments/assets/d483b10b-831a-4318-b39f-e741b894aef8" />
+- Compile and upload the code to ESP32 development board
+![image](https://github.com/user-attachments/assets/8279ee3e-95e9-4bd9-8c81-df7a3b93d2ec)
+
+
+
+# Edit demo code for Genmitsu USB WiFi Module (For CNC Device side) 
+
+
+- Download Wireless_GrblBridge_Device project to local
+- Open the Wireless_GrblBridge_Device.ino , which you can find in the project/folder "Wireless_GrblBridge_Device" 
+- Fullfill the mqtt broker address and port in code
+  <img width="617" alt="354d536f169b3c43fd0b05646844ca4" src="https://github.com/user-attachments/assets/203413a9-3c2f-4fbe-9b92-21e390a8b397" />  
+- Fullfill your wifi network SSID/NetworkName and password in code
+  <img width="327" alt="1751442128227" src="https://github.com/user-attachments/assets/bbbda270-a6e4-431b-a113-f1f1ecff5545" />
+- Fullfill one of the mqtt username and password you just set on the EMQX cloud platform "default projects"->your deployment->"Access Control" Page
+  here we use Username2:CNCDEVICE   password:20250701
+  <img width="228" alt="1751443127640" src="https://github.com/user-attachments/assets/d483b10b-831a-4318-b39f-e741b894aef8" />
+- Compile and upload the code to ESP32 development board
+![image](https://github.com/user-attachments/assets/8279ee3e-95e9-4bd9-8c81-df7a3b93d2ec)
+
+
