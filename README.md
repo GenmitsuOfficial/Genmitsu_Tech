@@ -1,4 +1,4 @@
-<img width="930" alt="b3dea30d009d8d2b401ed5ceab330b1" src="https://github.com/user-attachments/assets/eaa28d38-7f0d-41c0-a7c7-bcd4d6c323ea" />
+
 
 ​​Sharing Knowledge and Solutions for Common CNC Laser Machine and MCU Tech Issues​ and Scenes
 
@@ -104,6 +104,7 @@ After doing this, click File->Open to confirm the path your vlw file is.
 - One ESP32 Development board for PC side
 - One Genmitsu USB wifi module for CNC side
 - 
+
 ## Create New Deployment on EMQX Cloud Platform
 - Click New Deployment
 <img width="1280" alt="048ecbf1a1f2de2ca1d2b9f4950a982" src="https://github.com/user-attachments/assets/3387c336-09b8-4206-a803-63e33caa6228" />
