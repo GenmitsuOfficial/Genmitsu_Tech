@@ -100,7 +100,10 @@ After doing this, click File->Open to confirm the path your vlw file is.
 
 # Build a cloud based remote wireless grbl controller for PC/Laptop
 
-## Prepare: One ESP32 Device, 
+## Prepare: 
+- One ESP32 Development board for PC side
+- One Genmitsu USB wifi module for CNC side
+- 
 ## Create New Deployment on EMQX Cloud Platform
 - Click New Deployment
 <img width="1280" alt="048ecbf1a1f2de2ca1d2b9f4950a982" src="https://github.com/user-attachments/assets/3387c336-09b8-4206-a803-63e33caa6228" />
@@ -124,20 +127,20 @@ For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/
  --Username1:PCHost   password:20250630
  --Username2:CNCDEVICE   password:20250701
 
-
-#  
   
 # Edit demo code for ESP32 development board (For PC side) 
 
 - Download Wireless_GrblBridge_Host project to local
 - Open the Wireless_GrblBridge_Host.ino , which you can find in the project/folder "Wireless_GrblBridge_Host" 
 - Fullfill the mqtt broker address and port in code
-  <img width="617" alt="354d536f169b3c43fd0b05646844ca4" src="https://github.com/user-attachments/assets/203413a9-3c2f-4fbe-9b92-21e390a8b397" />  
+<img width="617" alt="354d536f169b3c43fd0b05646844ca4" src="https://github.com/user-attachments/assets/203413a9-3c2f-4fbe-9b92-21e390a8b397" />
+  
 - Fullfill your wifi network SSID/NetworkName and password in code
-  <img width="327" alt="1751442128227" src="https://github.com/user-attachments/assets/bbbda270-a6e4-431b-a113-f1f1ecff5545" />
+<img width="327" alt="1751442128227" src="https://github.com/user-attachments/assets/bbbda270-a6e4-431b-a113-f1f1ecff5545" />
+  
 - Fullfill one of the mqtt username and password you just set on the EMQX cloud platform "default projects"->your deployment->"Access Control" Page
   Username1:PCHost   password:20250630
-  <img width="228" alt="1751443127640" src="https://github.com/user-attachments/assets/d483b10b-831a-4318-b39f-e741b894aef8" />
+<img width="228" alt="1751443127640" src="https://github.com/user-attachments/assets/d483b10b-831a-4318-b39f-e741b894aef8" />
 - Compile and upload the code to ESP32 development board
 ![image](https://github.com/user-attachments/assets/8279ee3e-95e9-4bd9-8c81-df7a3b93d2ec)
 
