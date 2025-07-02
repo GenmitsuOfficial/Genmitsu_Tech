@@ -160,6 +160,7 @@ For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/
 - Fullfill one of the mqtt username and password you just set on the EMQX cloud platform "default projects"->your deployment->"Access Control" Page
   Username1:PCHost   password:20250630
 <img width="228" alt="1751443127640" src="https://github.com/user-attachments/assets/d483b10b-831a-4318-b39f-e741b894aef8" />
+
 - Compile and upload the code to ESP32 development board
 ![image](https://github.com/user-attachments/assets/8279ee3e-95e9-4bd9-8c81-df7a3b93d2ec)
 
