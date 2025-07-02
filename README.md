@@ -131,10 +131,10 @@ After doing this, click File->Open to confirm the path your vlw file is.
 - Set Spend Limit and Project name and then click payment
 <img width="954" alt="bf4796be52a9767fe9fb7ab73ddd5b6" src="https://github.com/user-attachments/assets/9e35e9a7-92a9-422a-90a8-a3ef01ad33e5" />
 For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/pricing.html
--Upon accepting the terms, the deployment will begin. The deployment's progress can be tracked on the Projects page.
- Once the status updates to Running, your deployment is successfully established and is now operational.
- After the deployment is created, it will appear on the EMQX Platform console home page. Click the Serverless deployment card to enter the deployment overview page.
- On the overview page, you can check the real-time status and connection information for your deployment.
+- Upon accepting the terms, the deployment will begin. The deployment's progress can be tracked on the Projects page.
+   Once the status updates to Running, your deployment is successfully established and is now operational.
+   After the deployment is created, it will appear on the EMQX Platform console home page. Click the Serverless deployment card to enter the deployment overview page.
+   On the overview page, you can check the real-time status and connection information for your deployment.
 
 
 ## Add Authentication Information
