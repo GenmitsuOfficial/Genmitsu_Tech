@@ -103,7 +103,9 @@ After doing this, click File->Open to confirm the path your vlw file is.
 ## Prepare: 
 - One ESP32 Development board for PC side
 - One Genmitsu USB wifi module for CNC side
-- 
+- CNC Device:Genmitsu 3018,3020,4040,3030,4030,6050
+- CH340 USB 2 Serial Converter
+- Dunpoints cables 
 
 ## Create New Deployment on EMQX Cloud Platform
 - Click New Deployment
@@ -123,13 +125,13 @@ For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/
 
 - Click "Access Control" to get to Client Authentication page.
 <img width="598" alt="657ecaf7ac1f116c29e9d49547e47dd" src="https://github.com/user-attachments/assets/be8233bd-d3dc-43bd-baab-6e0b11af1e3a" />
--On the Client Authentication page, select + Add. Enter the username and password in the input fields and click the Confirm button to complete the addition of authentication information.
+- On the Client Authentication page, select + Add. Enter the username and password in the input fields and click the Confirm button to complete the addition of authentication information.
  In this case , we should add two pairs of username and password :
  --Username1:PCHost   password:20250630
  --Username2:CNCDEVICE   password:20250701
 
   
-# Edit demo code for ESP32 development board (For PC side) 
+# Edit demo code and Upload firmware for ESP32 development board (For PC side) 
 
 - Download Wireless_GrblBridge_Host project to local
 - Open the Wireless_GrblBridge_Host.ino , which you can find in the project/folder "Wireless_GrblBridge_Host" 
@@ -147,7 +149,7 @@ For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/
 
 
 
-# Edit demo code for Genmitsu USB WiFi Module (For CNC Device side) 
+# Edit demo code and Upload firmware for Genmitsu USB WiFi Module (For CNC Device side) 
 
 
 - Download Wireless_GrblBridge_Device project to local
@@ -160,6 +162,16 @@ For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/
   here we use Username2:CNCDEVICE   password:20250701
   <img width="228" alt="1751443127640" src="https://github.com/user-attachments/assets/d483b10b-831a-4318-b39f-e741b894aef8" />
 - Compile and upload the code to ESP32 development board
-![image](https://github.com/user-attachments/assets/8279ee3e-95e9-4bd9-8c81-df7a3b93d2ec)
+  Wiring as the following pic for uploading 
+  <img width="820" alt="517b4d020bb1ad24302c7af581c4401" src="https://github.com/user-attachments/assets/296e1235-30cd-4c0f-a3b8-9ae3d862963f" />
+
+
+# Connect ESP32 Dev board/Genmitsu USB WiFi Module to PC/CNC Device 
+
+<img width="301" alt="7d48fb7dd7283aa93bc19ce6d2c33e4" src="https://github.com/user-attachments/assets/7f2ae942-c6ac-4c0f-baec-32ffd4745e70" />
+![b7439f7a9ba0d827a41ed5e48e2d35fc](https://github.com/user-attachments/assets/64313494-479f-4200-bc1e-26c2f0ed3bd5)
+
+
+# Turn on Candle/gSender and select the COM port that ESP32 Dev board is using 
 
 
