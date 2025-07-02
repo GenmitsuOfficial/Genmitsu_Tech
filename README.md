@@ -126,11 +126,15 @@ After doing this, click File->Open to confirm the path your vlw file is.
 ## Create New Deployment on EMQX Cloud Platform
 - Click New Deployment
 <img width="1280" alt="048ecbf1a1f2de2ca1d2b9f4950a982" src="https://github.com/user-attachments/assets/3387c336-09b8-4206-a803-63e33caa6228" />
+
 - Choose Deployment Plan,here we recommand Serverless, choose the region 
 <img width="954" alt="65df600ea7f8c9901ec0b83f2a15af6" src="https://github.com/user-attachments/assets/484d1427-6f23-4097-8f2d-0656f80e6e84" />
+
 - Set Spend Limit and Project name and then click payment
 <img width="954" alt="bf4796be52a9767fe9fb7ab73ddd5b6" src="https://github.com/user-attachments/assets/9e35e9a7-92a9-422a-90a8-a3ef01ad33e5" />
+
 For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/pricing.html
+
 - Upon accepting the terms, the deployment will begin. The deployment's progress can be tracked on the Projects page.
    Once the status updates to Running, your deployment is successfully established and is now operational.
    After the deployment is created, it will appear on the EMQX Platform console home page. Click the Serverless deployment card to enter the deployment overview page.
