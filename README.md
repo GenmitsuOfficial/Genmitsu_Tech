@@ -210,4 +210,47 @@ For more details about adding devices on EMQX Cloud, please check:https://docs.e
 
 # Turn on Candle/gSender and select the COM port that ESP32 Dev board is using 
 
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+<br>
+
+<br>
+
+
+# Fixing CNC CH340 Serial Connection Failed on WIN11
+
+### Genmistu CNC 3018,4030,6050 USB port connection issue
+
+When connecting a CNC machine to a Windows 11 PC via a serial port (e.g., USB-to-serial adapter using a CH340 chip), you may encounter connection failures in software like Candle or gSender. 
+This is often caused by an outdated or incompatible CH340 driver on Windows 11, which prevents proper communication with the CNC controller.
+
+
+###  Solution: Update the CH340 Driver
+
+To resolve the issue, update the CH340 driver using the stable driver installation file provided in the CH340_STABLE_DRIVER folder. 
+Follow these steps:Locate the Driver:Navigate to the CH340_STABLE_DRIVER folder on your PC.
+Find the driver installation file (e.g., CH340SER.EXE or similar).
+<br>
+
+<br>
+- Install the Driver:
+1. Double-click the driver installation file to run it.
+2. Follow the on-screen instructions to install the updated CH340 driver.
+3. If prompted, allow the installer to make changes to your system.
+
+<br>
+
+<br>
+
+-Test the Connection:Open Candle or gSender.
+1. Select the correct COM port (as shown in Device Manager).
+2. Attempt to connect to your CNC machine.
+3. If the connection succeeds, the issue is resolved.
+
+
 
