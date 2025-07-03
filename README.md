@@ -180,14 +180,18 @@ For more details about adding devices on EMQX Cloud, please check:https://docs.e
 
 
 - Download Wireless_GrblBridge_Device project to local
-- Open the Wireless_GrblBridge_Device.ino , which you can find in the project/folder "Wireless_GrblBridge_Device" 
+- Open the Wireless_GrblBridge_Device.ino , which you can find in the project/folder "Wireless_GrblBridge_Device"
+  
 - Fullfill the mqtt broker address and port in code
-<img width="617" alt="354d536f169b3c43fd0b05646844ca4" src="https://github.com/user-attachments/assets/203413a9-3c2f-4fbe-9b92-21e390a8b397" />  
+<img width="617" alt="354d536f169b3c43fd0b05646844ca4" src="https://github.com/user-attachments/assets/203413a9-3c2f-4fbe-9b92-21e390a8b397" />
+
 - Fullfill your wifi network SSID/NetworkName and password in code
 <img width="327" alt="1751442128227" src="https://github.com/user-attachments/assets/bbbda270-a6e4-431b-a113-f1f1ecff5545" />
+
 - Fullfill one of the mqtt username and password you just set on the EMQX cloud platform "default projects"->your deployment->"Access Control" Page
   here we use Username2:CNCDEVICE   password:20250701
 <img width="228" alt="1751443127640" src="https://github.com/user-attachments/assets/d483b10b-831a-4318-b39f-e741b894aef8" />
+
 - Compile and upload the code to ESP32 development board
   Wiring as the following pic for uploading 
 <img width="820" alt="517b4d020bb1ad24302c7af581c4401" src="https://github.com/user-attachments/assets/296e1235-30cd-4c0f-a3b8-9ae3d862963f" />
