@@ -1,7 +1,5 @@
 
 
-​​Sharing Knowledge and Solutions for Common CNC Laser Machine and MCU Tech Issues​ and Scenes
-
 # List
 - Display non ASCII Japanese on GUISlice
 - Build a cloud based remote wireless grbl controller for PC/Laptop
@@ -127,7 +125,8 @@ After doing this, click File->Open to confirm the path your vlw file is.
 - One Genmitsu USB wifi module for CNC side
 - CNC Device:Genmitsu 3018,3020,4040,3030,4030,6050
 - CH340 USB 2 Serial Converter
-- Dunpoints cables 
+- Dunpoints cables  
+- Circuit Breadboard
 
 ## Create New Deployment on EMQX Cloud Platform
 - Click New Deployment
@@ -147,16 +146,16 @@ For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/
    On the overview page, you can check the real-time status and connection information for your deployment.
 
 
-## Add Authentication Information
+## Add Authentication Information on EMQX Cloud
 
 - Click "Access Control" to get to Client Authentication page.
 <img width="598" alt="657ecaf7ac1f116c29e9d49547e47dd" src="https://github.com/user-attachments/assets/be8233bd-d3dc-43bd-baab-6e0b11af1e3a" />
 
 - On the Client Authentication page, select + Add. Enter the username and password in the input fields and click the Confirm button to complete the addition of authentication information.
-   In this case , we should add two pairs of username and password :
--- Username1:PCHost   password:20250630
--- Username2:CNCDEVICE   password:20250701
-
+   In this case , we should add two pairs of username and password
+   Username1:PCHost   password:20250630
+   Username2:CNCDEVICE   password:20250701
+For more details about adding devices on EMQX Cloud, please check:https://docs.emqx.com/en/cloud/latest/deployments/default_auth.html
   
 # Edit demo code and Upload firmware for ESP32 development board (For PC side) 
 
@@ -183,15 +182,15 @@ For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/
 - Download Wireless_GrblBridge_Device project to local
 - Open the Wireless_GrblBridge_Device.ino , which you can find in the project/folder "Wireless_GrblBridge_Device" 
 - Fullfill the mqtt broker address and port in code
-  <img width="617" alt="354d536f169b3c43fd0b05646844ca4" src="https://github.com/user-attachments/assets/203413a9-3c2f-4fbe-9b92-21e390a8b397" />  
+<img width="617" alt="354d536f169b3c43fd0b05646844ca4" src="https://github.com/user-attachments/assets/203413a9-3c2f-4fbe-9b92-21e390a8b397" />  
 - Fullfill your wifi network SSID/NetworkName and password in code
-  <img width="327" alt="1751442128227" src="https://github.com/user-attachments/assets/bbbda270-a6e4-431b-a113-f1f1ecff5545" />
+<img width="327" alt="1751442128227" src="https://github.com/user-attachments/assets/bbbda270-a6e4-431b-a113-f1f1ecff5545" />
 - Fullfill one of the mqtt username and password you just set on the EMQX cloud platform "default projects"->your deployment->"Access Control" Page
   here we use Username2:CNCDEVICE   password:20250701
-  <img width="228" alt="1751443127640" src="https://github.com/user-attachments/assets/d483b10b-831a-4318-b39f-e741b894aef8" />
+<img width="228" alt="1751443127640" src="https://github.com/user-attachments/assets/d483b10b-831a-4318-b39f-e741b894aef8" />
 - Compile and upload the code to ESP32 development board
   Wiring as the following pic for uploading 
-  <img width="820" alt="517b4d020bb1ad24302c7af581c4401" src="https://github.com/user-attachments/assets/296e1235-30cd-4c0f-a3b8-9ae3d862963f" />
+<img width="820" alt="517b4d020bb1ad24302c7af581c4401" src="https://github.com/user-attachments/assets/296e1235-30cd-4c0f-a3b8-9ae3d862963f" />
 
 
 # Connect ESP32 Dev board/Genmitsu USB WiFi Module to PC/CNC Device 
