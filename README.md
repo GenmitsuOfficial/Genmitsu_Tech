@@ -238,6 +238,7 @@ Find the driver installation file (e.g., CH340SER.EXE or similar).
 <br>
 
 <br>
+
 - Install the Driver:
 1. Double-click the driver installation file to run it.
 2. Follow the on-screen instructions to install the updated CH340 driver.
@@ -247,7 +248,7 @@ Find the driver installation file (e.g., CH340SER.EXE or similar).
 
 <br>
 
--Test the Connection:Open Candle or gSender.
+- Test the Connection:Open Candle or gSender.
 1. Select the correct COM port (as shown in Device Manager).
 2. Attempt to connect to your CNC machine.
 3. If the connection succeeds, the issue is resolved.
