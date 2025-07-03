@@ -152,9 +152,9 @@ For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/
 <img width="598" alt="657ecaf7ac1f116c29e9d49547e47dd" src="https://github.com/user-attachments/assets/be8233bd-d3dc-43bd-baab-6e0b11af1e3a" />
 
 - On the Client Authentication page, select + Add. Enter the username and password in the input fields and click the Confirm button to complete the addition of authentication information.
-   In this case , we should add two pairs of username and password
-   Username1:PCHost   password:20250630
-   Username2:CNCDEVICE   password:20250701
+  In this case , we should add two pairs of username and password <br>
+  1: Username:PCHost   password:20250630 <br>
+  2: Username:CNCDEVICE   password:20250701 <br>
 For more details about adding devices on EMQX Cloud, please check:https://docs.emqx.com/en/cloud/latest/deployments/default_auth.html
   
 # Edit demo code and Upload firmware for ESP32 development board (For PC side) 
@@ -168,7 +168,7 @@ For more details about adding devices on EMQX Cloud, please check:https://docs.e
 <img width="327" alt="1751442128227" src="https://github.com/user-attachments/assets/bbbda270-a6e4-431b-a113-f1f1ecff5545" />
   
 - Fullfill one of the mqtt username and password you just set on the EMQX cloud platform "default projects"->your deployment->"Access Control" Page
-  Username1:PCHost   password:20250630
+  Username:PCHost   password:20250630
 <img width="228" alt="1751443127640" src="https://github.com/user-attachments/assets/d483b10b-831a-4318-b39f-e741b894aef8" />
 
 - Compile and upload the code to ESP32 development board
@@ -189,7 +189,7 @@ For more details about adding devices on EMQX Cloud, please check:https://docs.e
 <img width="327" alt="1751442128227" src="https://github.com/user-attachments/assets/bbbda270-a6e4-431b-a113-f1f1ecff5545" />
 
 - Fullfill one of the mqtt username and password you just set on the EMQX cloud platform "default projects"->your deployment->"Access Control" Page
-  here we use Username2:CNCDEVICE   password:20250701
+  here we use Username:CNCDEVICE   password:20250701
 <img width="228" alt="1751443127640" src="https://github.com/user-attachments/assets/d483b10b-831a-4318-b39f-e741b894aef8" />
 
 - Compile and upload the code to ESP32 development board
