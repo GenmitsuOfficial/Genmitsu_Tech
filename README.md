@@ -209,7 +209,7 @@ For more details about adding devices on EMQX Cloud, please check:https://docs.e
 
 
 # Turn on Candle/gSender and select the COM port that ESP32 Dev board is using 
-
+- Now you can open Candle or gSender to control your CNC wireless and remotely 
 <br>
 <br>
 
