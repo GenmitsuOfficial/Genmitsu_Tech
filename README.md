@@ -151,6 +151,7 @@ For more pricing details ,pls check https://docs.emqx.com/en/cloud/latest/price/
 
 - Click "Access Control" to get to Client Authentication page.
 <img width="598" alt="657ecaf7ac1f116c29e9d49547e47dd" src="https://github.com/user-attachments/assets/be8233bd-d3dc-43bd-baab-6e0b11af1e3a" />
+
 - On the Client Authentication page, select + Add. Enter the username and password in the input fields and click the Confirm button to complete the addition of authentication information.
    In this case , we should add two pairs of username and password :
 -- Username1:PCHost   password:20250630
